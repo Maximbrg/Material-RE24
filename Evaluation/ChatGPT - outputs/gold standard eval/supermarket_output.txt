@@ -1,0 +1,35 @@
+Step 1: Find associations between the classes
+
+1. Customer - Newsletter: A customer can subscribe or unsubscribe from the newsletter.
+2. Customer - Order: A customer can place an order.
+3. Order - Products: An order consists of products.
+4. Customer - Products: A customer can add products to a wishlist or a shopping list, and can also search, filter, and order products.
+5. Customer - Delivery: A customer can request a delivery, select a delivery date and time, and can also request express delivery.
+6. Delivery - Order: A delivery is associated with an order.
+7. Customer - Store: A customer can select a default store, find the location of products in a store, and check if a product is available in a store.
+8. Customer - Personal Discount: A customer can receive a personal discount.
+9. Customer - Loyalty Card: A customer can link a loyalty card to their account.
+10. Customer - Wishlist: A customer can add products to a wishlist.
+11. Customer - Shopping List: A customer can add products to a shopping list.
+12. Customer - Recipes: A customer can receive recipe suggestions and see which products were used in a recipe.
+
+Step 2: Remove unnecessary/incorrect associations
+
+All the associations listed above are relevant to the problem domain and are not related to implementation constructs, ternary associations, or derived associations. Therefore, no associations need to be removed.
+
+Step 3: Final list of associations
+
+1. Customer - Newsletter
+2. Customer - Order
+3. Order - Products
+4. Customer - Products
+5. Customer - Delivery
+6. Delivery - Order
+7. Customer - Store
+8. Customer - Personal Discount
+9. Customer - Loyalty Card
+10. Customer - Wishlist
+11. Customer - Shopping List
+12. Customer - Recipes
+
+These associations are based on the user stories provided and represent the relationships between the different classes in the system.

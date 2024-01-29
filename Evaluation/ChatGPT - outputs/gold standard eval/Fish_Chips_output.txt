@@ -1,0 +1,43 @@
+Step 1: Find associations between the classes
+
+1. Orders and Products: An order contains one or more products.
+2. Orders and Customer: An order is made by a customer.
+3. Orders and Cashier: An order is processed by a cashier.
+4. Orders and Delivery Person: An order is delivered by a delivery person.
+5. Orders and Requests: An order may have special requests.
+6. Orders and Coupons: An order may have a coupon applied.
+7. Orders and Payment: An order is paid through a payment method.
+8. Cashier and Customer: A cashier interacts with a customer.
+9. Cashier and Products: A cashier processes products in an order.
+10. Cashier and Payment: A cashier handles the payment process.
+11. Cashier and Coupons: A cashier applies coupons to an order.
+12. Cashier and Requests: A cashier handles special requests in an order.
+13. Delivery Person and Customer: A delivery person delivers the order to the customer.
+14. Customer and Products: A customer orders products.
+15. Customer and Payment: A customer makes a payment.
+16. Customer and Coupons: A customer uses coupons.
+17. Customer and Requests: A customer makes special requests.
+
+Step 2: Remove unnecessary/incorrect associations
+
+1. Cashier and Products: This is a derived association as a cashier processes products through orders.
+2. Customer and Products: This is a derived association as a customer orders products through orders.
+3. Customer and Coupons: This is a derived association as a customer uses coupons through orders.
+4. Customer and Requests: This is a derived association as a customer makes special requests through orders.
+
+Step 3: Conclude your answer with a final list of associations between each two classes
+
+1. Orders and Products
+2. Orders and Customer
+3. Orders and Cashier
+4. Orders and Delivery Person
+5. Orders and Requests
+6. Orders and Coupons
+7. Orders and Payment
+8. Cashier and Customer
+9. Cashier and Payment
+10. Cashier and Coupons
+11. Cashier and Requests
+12. Delivery Person and Customer
+
+The reasoning behind these associations is based on the user stories provided. The associations represent the interactions between different entities in the system. For example, an order is associated with a customer because a customer makes an order. Similarly, an order is associated with a cashier because a cashier processes the order. The associations that were removed were derived associations, meaning they could be inferred from other associations. For example, the association between a customer and products can be inferred from the association between a customer and orders and the association between orders and products.

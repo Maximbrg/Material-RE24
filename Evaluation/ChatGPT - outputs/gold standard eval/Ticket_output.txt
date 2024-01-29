@@ -1,0 +1,39 @@
+Step 1: Find associations between the classes
+
+1. User - Event Types: A user can have preferences for multiple event types.
+2. User - Events: A user can attend multiple events and each event can have multiple users.
+3. User - Artists: A user can have preferences for multiple artists.
+4. User - Ticket: A user can buy multiple tickets and each ticket is bought by a user.
+5. User - Payment: A user can have multiple payment methods.
+6. User - Reseller: A user can be a reseller.
+7. User - Order: A user can have multiple orders and each order is made by a user.
+8. Event Types - Events: Each event type can have multiple events and each event belongs to an event type.
+9. Events - Artists: Each event can have multiple artists and each artist can perform at multiple events.
+10. Events - Ticket: Each event can have multiple tickets and each ticket belongs to an event.
+11. Events - Venue: Each event is held at a venue and each venue can host multiple events.
+12. Artists - Genre: Each artist can belong to multiple genres and each genre can have multiple artists.
+13. Ticket - Order: Each order can have multiple tickets and each ticket belongs to an order.
+14. Reseller - Ticket: A reseller can sell multiple tickets and each ticket can be sold by a reseller.
+
+Step 2: Remove unnecessary/incorrect associations
+
+All the associations seem to be relevant and not derived, implementation or ternary associations. 
+
+Step 3: Final list of associations
+
+1. User - Event Types
+2. User - Events
+3. User - Artists
+4. User - Ticket
+5. User - Payment
+6. User - Reseller
+7. User - Order
+8. Event Types - Events
+9. Events - Artists
+10. Events - Ticket
+11. Events - Venue
+12. Artists - Genre
+13. Ticket - Order
+14. Reseller - Ticket
+
+The reasoning behind these associations is based on the user stories provided. For example, a user can have preferences for multiple event types and artists, can buy multiple tickets, can have multiple payment methods, can be a reseller, and can make multiple orders. Each event can have multiple artists and tickets, and is held at a venue. Each artist can belong to multiple genres. Each order can have multiple tickets. A reseller can sell multiple tickets.

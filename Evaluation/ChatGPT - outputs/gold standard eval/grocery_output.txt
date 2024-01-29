@@ -1,0 +1,34 @@
+Step 1: Find associations between the classes
+
+1. Employee - Payments: Employees receive payments.
+2. Employee - Schedule: Employees have a schedule.
+3. Employee - Message: Employees send and receive messages.
+4. Employee - Contracts: Employees have contracts.
+5. Employee - Certificates: Employees have certificates.
+6. Employee - Complaint: Employees can file complaints.
+7. Employee - Salary Statement: Employees receive salary statements.
+8. Employee - Working Hours: Employees have working hours.
+9. Payments - Salary Statement: Payments are reflected in the salary statement.
+10. Schedule - Working Hours: The schedule is based on working hours.
+11. Message - Complaint: Messages can be related to complaints.
+12. Contracts - Certificates: Contracts may require certain certificates.
+
+Step 2: Remove unnecessary/incorrect associations
+
+1. Contracts - Certificates: This association is removed as it is not necessary for a contract to require certain certificates. This is an implementation detail.
+
+Step 3: Final list of associations
+
+1. Employee - Payments
+2. Employee - Schedule
+3. Employee - Message
+4. Employee - Contracts
+5. Employee - Certificates
+6. Employee - Complaint
+7. Employee - Salary Statement
+8. Employee - Working Hours
+9. Payments - Salary Statement
+10. Schedule - Working Hours
+11. Message - Complaint
+
+Reasoning and assumptions: The associations are based on the user stories provided. For example, employees receive payments and salary statements, hence the association between Employee - Payments and Employee - Salary Statement. Similarly, the schedule is based on working hours, hence the association between Schedule - Working Hours. The association between Message - Complaint is based on the assumption that messages can be related to complaints.

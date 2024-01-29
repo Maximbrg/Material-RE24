@@ -1,0 +1,61 @@
+Step 1: Find associations between the classes
+
+1. Guardian - Student: A guardian is associated with a student as they are responsible for them.
+2. Guardian - Message: A guardian can send and receive messages.
+3. Student - Message: A student can send and receive messages.
+4. Teacher - Message: A teacher can send and receive messages.
+5. Administrator - Message: An administrator can send and receive messages.
+6. Student - Assignment: A student is associated with assignments as they need to complete them.
+7. Teacher - Assignment: A teacher is associated with assignments as they assign them to students.
+8. Student - Digital Learning Modules (DLM): A student is associated with DLM as they need to access and work on them.
+9. Teacher - Digital Learning Modules (DLM): A teacher is associated with DLM as they create and assign them to students.
+10. Student - Class: A student is associated with a class as they are part of it.
+11. Teacher - Class: A teacher is associated with a class as they teach it.
+12. Student - Timetable: A student is associated with a timetable as they follow it.
+13. Teacher - Timetable: A teacher is associated with a timetable as they follow it.
+14. Administrator - Timetable: An administrator is associated with a timetable as they create and manage it.
+15. Student - Grades: A student is associated with grades as they receive them.
+16. Teacher - Grades: A teacher is associated with grades as they assign them to students.
+17. Student - Behavior: A student is associated with behavior as it reflects their conduct.
+18. Teacher - Behavior: A teacher is associated with behavior as they record and monitor student behavior.
+19. Teacher - Disciplinary Actions: A teacher is associated with disciplinary actions as they record and enforce them.
+20. Administrator - Disciplinary Actions: An administrator is associated with disciplinary actions as they monitor and enforce them.
+21. Student - Mentor: A student is associated with a mentor as they guide them.
+22. Teacher - Mentor: A teacher can be a mentor to a student.
+23. Guardian - Administrator: A guardian can communicate with an administrator.
+24. Student - Material: A student is associated with material as they need to study it.
+25. Teacher - Material: A teacher is associated with material as they provide it to students.
+
+Step 2: Remove unnecessary/incorrect associations
+
+All the associations seem relevant and are not derived, ternary, or implementation associations.
+
+Step 3: Final list of associations
+
+1. Guardian - Student
+2. Guardian - Message
+3. Student - Message
+4. Teacher - Message
+5. Administrator - Message
+6. Student - Assignment
+7. Teacher - Assignment
+8. Student - Digital Learning Modules (DLM)
+9. Teacher - Digital Learning Modules (DLM)
+10. Student - Class
+11. Teacher - Class
+12. Student - Timetable
+13. Teacher - Timetable
+14. Administrator - Timetable
+15. Student - Grades
+16. Teacher - Grades
+17. Student - Behavior
+18. Teacher - Behavior
+19. Teacher - Disciplinary Actions
+20. Administrator - Disciplinary Actions
+21. Student - Mentor
+22. Teacher - Mentor
+23. Guardian - Administrator
+24. Student - Material
+25. Teacher - Material
+
+The reasoning behind these associations is based on the user stories provided. The associations represent the relationships and interactions between the different classes in the context of a learning management system.

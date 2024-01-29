@@ -1,0 +1,25 @@
+Step 1: Find associations between the classes
+
+1. Game - Moderator: A game is created by a moderator. This is a one-to-many relationship as a moderator can create multiple games but a game is created by one moderator.
+2. Game - Estimator: A game involves multiple estimators. This is a many-to-many relationship as a game can have multiple estimators and an estimator can participate in multiple games.
+3. Game - Round: A game consists of multiple rounds. This is a one-to-many relationship as a game can have multiple rounds but a round belongs to one game.
+4. Round - Item: A round involves estimating multiple items. This is a one-to-many relationship as a round can involve multiple items but an item is estimated in one round.
+5. Item - Estimate: An item receives multiple estimates. This is a one-to-many relationship as an item can receive multiple estimates but an estimate is for one item.
+6. Estimator - Estimate: An estimator gives multiple estimates. This is a one-to-many relationship as an estimator can give multiple estimates but an estimate is given by one estimator.
+7. Estimator - Card: An estimator uses a card to give an estimate. This is a one-to-one relationship as an estimator uses one card to give an estimate.
+
+Step 2: Remove unnecessary/incorrect associations
+
+All the associations defined above are relevant and not related to implementation constructs. They are also not ternary or derived associations. Therefore, no associations need to be removed.
+
+Step 3: Final list of associations
+
+1. Game - Moderator: One-to-many
+2. Game - Estimator: Many-to-many
+3. Game - Round: One-to-many
+4. Round - Item: One-to-many
+5. Item - Estimate: One-to-many
+6. Estimator - Estimate: One-to-many
+7. Estimator - Card: One-to-one
+
+These associations are based on the user stories provided and the roles and actions described in them. They represent the relationships between the different entities involved in the game and the actions they perform.

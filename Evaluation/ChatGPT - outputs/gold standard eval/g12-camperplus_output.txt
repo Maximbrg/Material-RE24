@@ -1,0 +1,106 @@
+Step 1: Find associations between the classes
+
+1. Camp -> Campers: A camp has multiple campers.
+2. Camp -> Camp Workers: A camp has multiple camp workers.
+3. Camp -> Facilities: A camp has multiple facilities.
+4. Camp -> Groups: A camp has multiple groups.
+5. Camp -> Schedules: A camp has multiple schedules.
+6. Camp -> Activities: A camp has multiple activities.
+7. Camp -> Rules: A camp has multiple rules.
+8. Camp -> Forms: A camp has multiple forms.
+9. Camp -> Payments: A camp has multiple payments.
+10. Camp -> Feedback: A camp receives multiple feedbacks.
+11. Camp -> Photos: A camp has multiple photos.
+12. Camp -> Positions: A camp has multiple positions.
+13. Camp -> Supplies: A camp has multiple supplies.
+14. Camp -> Attendance: A camp has attendance records.
+15. Camp -> Counselor: A camp has multiple counselors.
+16. Campers -> Guardians: Each camper has one or more guardians.
+17. Campers -> Groups: Each camper belongs to one or more groups.
+18. Campers -> Activities: Each camper participates in one or more activities.
+19. Campers -> Forms: Each camper has one or more forms.
+20. Campers -> Attendance: Each camper has attendance records.
+21. Camp Workers -> Positions: Each camp worker has a position.
+22. Camp Workers -> Activities: Each camp worker is responsible for one or more activities.
+23. Camp Workers -> Groups: Each camp worker is responsible for one or more groups.
+24. Camp Workers -> Supplies: Each camp worker reports on supplies.
+25. Camp Workers -> Feedback: Each camp worker receives feedback.
+26. Counselor -> Campers: Each counselor is responsible for one or more campers.
+27. Counselor -> Groups: Each counselor is responsible for one or more groups.
+28. Counselor -> Attendance: Each counselor takes attendance.
+29. Groups -> Campers: Each group consists of one or more campers.
+30. Groups -> Activities: Each group participates in one or more activities.
+31. Groups -> Schedules: Each group has a schedule.
+32. Activities -> Schedules: Each activity is part of a schedule.
+33. Activities -> Campers: Each activity involves one or more campers.
+34. Activities -> Groups: Each activity involves one or more groups.
+35. Activities -> Camp Workers: Each activity is supervised by one or more camp workers.
+36. Activities -> Counselor: Each activity is supervised by one or more counselors.
+37. Forms -> Campers: Each form is associated with a camper.
+38. Forms -> Guardians: Each form is signed by a guardian.
+39. Payments -> Campers: Each payment is made by a camper's guardian.
+40. Feedback -> Camp: Each feedback is given to the camp.
+41. Feedback -> Camp Workers: Each feedback is about a camp worker.
+42. Photos -> Campers: Each photo features one or more campers.
+43. Photos -> Activities: Each photo is taken during an activity.
+44. Supplies -> Camp Workers: Each supply is reported by a camp worker.
+45. Attendance -> Campers: Each attendance record is for a camper.
+46. Attendance -> Counselor: Each attendance record is taken by a counselor.
+47. Positions -> Camp Workers: Each position is held by a camp worker.
+48. Rules -> Camp: Each rule is set by the camp.
+
+Step 2: Remove unnecessary/incorrect associations
+
+- Camp -> Photos: This association is not necessary as photos are associated with campers and activities.
+- Camp -> Payments: This association is not necessary as payments are associated with campers.
+- Camp -> Attendance: This association is not necessary as attendance is associated with campers and counselors.
+- Camp -> Supplies: This association is not necessary as supplies are reported by camp workers.
+- Camp -> Positions: This association is not necessary as positions are held by camp workers.
+- Camp Workers -> Supplies: This association is not necessary as supplies are associated with the camp.
+- Camp Workers -> Feedback: This association is not necessary as feedback is given to the camp.
+- Counselor -> Attendance: This association is not necessary as attendance is associated with campers.
+- Activities -> Camp Workers: This association is not necessary as activities are associated with groups and campers.
+- Activities -> Counselor: This association is not necessary as activities are associated with groups and campers.
+- Forms -> Guardians: This association is not necessary as forms are associated with campers.
+- Payments -> Campers: This association is not necessary as payments are associated with the camp.
+- Feedback -> Camp Workers: This association is not necessary as feedback is given to the camp.
+- Photos -> Activities: This association is not necessary as photos are associated with campers.
+- Supplies -> Camp Workers: This association is not necessary as supplies are associated with the camp.
+- Attendance -> Counselor: This association is not necessary as attendance is associated with campers.
+- Positions -> Camp Workers: This association is not necessary as positions are associated with the camp.
+
+Step 3: Final list of associations
+
+1. Camp -> Campers
+2. Camp -> Camp Workers
+3. Camp -> Facilities
+4. Camp -> Groups
+5. Camp -> Schedules
+6. Camp -> Activities
+7. Camp -> Rules
+8. Camp -> Forms
+9. Camp -> Feedback
+10. Camp -> Counselor
+11. Campers -> Guardians
+12. Campers -> Groups
+13. Campers -> Activities
+14. Campers -> Forms
+15. Campers -> Attendance
+16. Camp Workers -> Positions
+17. Camp Workers -> Activities
+18. Camp Workers -> Groups
+19. Counselor -> Campers
+20. Counselor -> Groups
+21. Groups -> Campers
+22. Groups -> Activities
+23. Groups -> Schedules
+24. Activities -> Schedules
+25. Activities -> Campers
+26. Activities -> Groups
+27. Forms -> Campers
+28. Feedback -> Camp
+29. Photos -> Campers
+30. Attendance -> Campers
+31. Rules -> Camp
+
+The associations were determined based on the user stories and the roles and responsibilities of each class in the camp domain. The associations represent the relationships and interactions between the classes in the context of a camp.

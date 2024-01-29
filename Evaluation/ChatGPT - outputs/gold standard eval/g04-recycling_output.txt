@@ -1,0 +1,34 @@
+Step 1: Find associations between the classes
+
+1. User - Recycling Facility: Users need to find and interact with recycling facilities, such as viewing their hours and types of waste they accept.
+2. User - Waste Type: Users need to select different types of recyclable waste to find suitable recycling facilities.
+3. User - Schedule: Users need to manage their schedules for drop-offs at recycling facilities.
+4. User - Feedback: Users can provide feedback or complaints about the service.
+5. User - Safe Disposal Events: Users need to view safe disposal events in their area.
+6. User - Questions: Users may have questions that need to be answered by the system or by admins.
+7. Recycling Facility - Waste Type: Recycling facilities accept certain types of waste.
+8. Recycling Facility - Schedule: Recycling facilities have specific operating hours that users need to know.
+9. Recycling Facility - Employees: Employees work at recycling facilities.
+10. Employees - Schedule: Employees have schedules that may need to be managed or viewed.
+11. Employees - Questions: Employees may have questions or need to answer questions from users.
+12. Employees - Feedback: Employees may need to view or respond to feedback from users.
+
+Step 2: Remove unnecessary/incorrect associations
+
+1. Employees - Questions: This association is not necessary as it's not explicitly mentioned in the user stories that employees need to answer questions from users. This could be a task for admins or customer service representatives.
+2. Employees - Schedule: This association is not necessary as it's not explicitly mentioned in the user stories that employees' schedules need to be managed or viewed by users or other system actors.
+
+Step 3: Final list of associations
+
+1. User - Recycling Facility
+2. User - Waste Type
+3. User - Schedule
+4. User - Feedback
+5. User - Safe Disposal Events
+6. User - Questions
+7. Recycling Facility - Waste Type
+8. Recycling Facility - Schedule
+9. Recycling Facility - Employees
+10. Employees - Feedback
+
+These associations are based on the user stories provided and the identified classes. They represent the relationships between the different actors and entities in the system, and how they interact with each other to fulfill the requirements of the system.

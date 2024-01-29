@@ -1,0 +1,38 @@
+Step 1: Find associations between the classes
+
+1. Customer - Subscription: A customer can have one or more subscriptions.
+2. Customer - Membership: A customer can have one membership.
+3. Customer - Payment Information: A customer has payment information.
+4. Customer - Booking: A customer can make multiple bookings.
+5. Customer - Gym: A customer uses the gym.
+6. Membership - Person: A membership can have multiple persons (in case of a family membership).
+7. Booking - Lessons: A booking is for a specific lesson.
+8. Booking - Spot: A booking reserves a spot.
+9. Lessons - Trainer: A lesson is conducted by a trainer.
+10. Lessons - Room: A lesson is conducted in a room.
+11. Trainer - Schedule: A trainer has a schedule.
+12. Trainer - Training Sessions: A trainer conducts multiple training sessions.
+13. Gym - Room: A gym has multiple rooms.
+14. Gym - Spot: A gym has multiple spots.
+
+Step 2: Remove unnecessary/incorrect associations
+
+1. Customer - Gym: This is an implementation association. The customer's interaction with the gym is through the other classes (like booking, subscription, etc.), so we don't need a direct association between customer and gym.
+
+Step 3: Final list of associations
+
+1. Customer - Subscription: A customer can have one or more subscriptions.
+2. Customer - Membership: A customer can have one membership.
+3. Customer - Payment Information: A customer has payment information.
+4. Customer - Booking: A customer can make multiple bookings.
+5. Membership - Person: A membership can have multiple persons (in case of a family membership).
+6. Booking - Lessons: A booking is for a specific lesson.
+7. Booking - Spot: A booking reserves a spot.
+8. Lessons - Trainer: A lesson is conducted by a trainer.
+9. Lessons - Room: A lesson is conducted in a room.
+10. Trainer - Schedule: A trainer has a schedule.
+11. Trainer - Training Sessions: A trainer conducts multiple training sessions.
+12. Gym - Room: A gym has multiple rooms.
+13. Gym - Spot: A gym has multiple spots.
+
+The reasoning behind these associations is based on the user stories provided. The associations represent the relationships between the different entities in the system as described in the user stories.
