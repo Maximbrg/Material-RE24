@@ -70,9 +70,9 @@ This folder represents the online appendix for the paper "Deriving Domain Models
     │   │
     │   └───gold standard eval
     │           Fish_Chips_output.txt
-    │           g04-recycling_output.txt
-    │           g12-camperplus_output.txt
-    │           g13-planningpoker_output.txt
+    │           recycling_output.txt
+    │           camperplus_output.txt
+    │           planningpoker_output.txt
     │           grocery_output.txt
     │           school_output.txt
     │           sports_output.txt
