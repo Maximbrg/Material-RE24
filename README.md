@@ -5,16 +5,16 @@ This folder represents the online appendix for the paper "Deriving Domain Models
 --------------------------------------------------
 ##   Tree Structure
 <pre>
-├───A Benchmark for Domain Model
-│   ├───Agreement
-│   │       Agreement - Associations.xlsx
+├───A Benchmark for Domain Model    # Section III 
+│   ├───Agreement # A directory that contains information regarding the tags of the different taggers
+│   │       Agreement - Associations.xlsx     
 │   │       Agreement - Classes.xlsx
 │   │
-│   ├───Domain Models
+│   ├───Domain Models # A directory that contains the gold standard models
 │   │       Gold standard - Associations.xlsx
 │   │       Gold standard - Classes.xlsx
 │   │
-│   └───User Stories
+│   └───User Stories # A directory that contains the user stories
 │           camperplus.txt
 │           Fish_Chips.txt
 │           grocery.txt
@@ -25,12 +25,12 @@ This folder represents the online appendix for the paper "Deriving Domain Models
 │           supermarket.txt
 │           Ticket.txt
 │
-├───Discussion
-│   ├───False positive error type
+├───Discussion # Section VI  
+│   ├───False positive error type # A directory that contains the material for findings 4 and 5
 │   │       fp-analysis-cohen-kappa.xlsx
 │   │       Qualitative Error Analysis.xlsx
 │   │
-│   └───ML-class-SHAP values
+│   └───ML-class-SHAP values # A directory that contains the material for finding 6
 │           1.png
 │           2.png
 │           3.png
@@ -41,11 +41,11 @@ This folder represents the online appendix for the paper "Deriving Domain Models
 │           8.png
 │           9.png
 │
-├───Domain Model Derivation Approaches
+├───Domain Model Derivation Approaches # Section IV  
 │   ├───ChatGPT
-│   │       Prompts.pdf
+│   │       Prompts.pdf # The prompt we used to generate domain models
 │   │
-│   └───ML
+│   └───ML # A directory that contains the code for generating the features for classes and associations
 │       ├───Associations
 │       │       associations_feature_generator.ipynb
 │       │       edges.csv
@@ -53,11 +53,11 @@ This folder represents the online appendix for the paper "Deriving Domain Models
 │       └───Classes
 │               class_feature_generator.ipynb
 │
-└───Evaluation
-    │   Overall results.xlsx
-    |   DoMoBOT eval.xlsx
+└───Evaluation # Section V
+    │   Overall results.xlsx # Tables shown in the paper
+    |   DoMoBOT eval.xlsx # Experiment with DoMoBOT tool
     │
-    ├───ChatGPT - outputs
+    ├───ChatGPT - outputs 
     │   ├───adjusted eval
     │   │       camper_gpt.xlsx
     │   │       chatgpt_recycle.xlsx
