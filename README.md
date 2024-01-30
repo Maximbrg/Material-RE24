@@ -31,15 +31,15 @@ This folder represents the online appendix for the paper "Deriving Domain Models
 │   │       Qualitative Error Analysis.xlsx
 │   │
 │   └───ML-class-SHAP values # A directory that contains the material for finding 6
-│           1.png
-│           2.png
-│           3.png
-│           4.png
-│           5.png
-│           6.png
-│           7.png
-│           8.png
-│           9.png
+│           planningpoker_shapvalues.png
+│           campers_shapvalues.png
+│           fishchips_shapvalues.png
+│           grocery_shapvalues.png
+│           recycling_shapvalues.png
+│           school_shapvalues.png
+│           sports_shapvalues.png
+│           supermarket_shapvalues.png
+│           tickets_shapvalues.png
 │
 ├───Domain Model Derivation Approaches # Section IV  
 │   ├───ChatGPT
